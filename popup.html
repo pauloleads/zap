@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/stylesheet.min.css">
+		<link rel="stylesheet" href="css/jquery.emojipicker.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
+		<link rel="stylesheet" href="css/css_global.css">
+		<title>__MSG_txt_WasuBOT__</title>
+		<script src="js/jq.js"></script>
+ 		<script src="popup.min.js"></script>
+		<script src="js/jquery.emojipicker.js"></script>
+        <script type="text/javascript" src="js/jquery.emojis.js"></script>
+		
+	</head>
+	
+	<body>
+		<i class="icon-icon-add-template"></i>
+		<div class="main-wrapoper" id="mainWrapper">
+			<div class="container-fluid menu">
+				<ul class="nav nav-tabs top-nav text-center" id="homeNavTabsUL">
+					<li><a data-toggle="tab" id="homeNavTabs" href="#inicioTab"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+					</svg>
+                    <span id="lgn_wasubo_tab">__MSG_lgn_wasubo_tab__</span></a></li>
+					<li><a data-toggle="tab" href="#showWhatsapp" id="showWhatsappTab">Show Whatsapp</a></li>
+					
+					
+					<li>
+						<a data-toggle="tab" href="#sendMessages" id="sendMessagesTab">
+							<span class="value">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+									<path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+								</svg>
+								<strong class="value-text">__MSG_lgn_mensajeria_tab__</strong>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#reports" id="reportsTab">
+							<span class="value">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+									<path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+								</svg>
+								<strong class="value-text">__MSG_lgn_reportes_tab__</strong>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#chatbotSettings" id="chatbotSettingsTab">
+							<span class="value">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-quote-fill" viewBox="0 0 16 16">
+									<path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM7.194 4.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667 4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z"/>
+								</svg>
+								<strong class="value-text">__MSG_lgn_chatbot_tab__</strong>  
+								
+							</span>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#phonebook" id="phonebookTab">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+								<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+								<path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+								<path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+							</svg>
+							<strong class="value-text">__MSG_lgn_grupos_tab__</strong>  
+							
+						</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#settings" id="settingsTab">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+								<path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+							</svg>
+							<strong class="value-text">__MSG_lgn_utiles_tab__</strong>  
+						</a>
+					</li>
+					<!--li>
+						<a data-toggle="tab" href="#help" id="helpTab">
+						<span class="value">
+						<i class="wa icon-question-o"></i>
+						<strong class="value-text">Help</strong>
+						</span>
+						</a>
+					</li-->
+				</ul>
+			</div>
+			<div class="tab-content page-content">
+				<div class="tab-pane fade" id="inicioTab">
+					<div class="container-fluid text-left" style="width:100%;">
+						<center><img src="img/logo.png" width="220px" /></center>
+						<hr>
+						<div id="mensaje_principal"></div>
+						<hr>
+					</div>
+					<br>
+					<br>
+					<br><br>
+					<br>
+					<br>
+					<div class="container-fluid">
+						
+						
+						
+					</div>
+					
+				</div>
+				<div class="tab-pane fade" id="settings">
+					
+					<div class="container-fluid">
+						<div style="background: #fb7502; padding: 4px; text-align: center; color: #00ac77;" id="div_cambiar_numero_pro">
+							Change vip to other number > <a target="_blank" href="https://wasubo.com/change" >[Clic]</a>
+							
+							<input style="display:none;" id="input_old_number" type="hidden" />
+							<input style="display:none;" id="input_new_number" placeholder="Indicativo + Numero celular" />
+							<input style="display:none;" id="cambiar_nuevo_numero_ahora" type="button" value="Cambiar">
+							 
+						</div>
+						<h3>__MSG_txt_Utilidades__</h3><hr>
+						<h5 class="settings-header">__MSG_txt_Privacidad_opciones_especiales__</h5>
+						<ul>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="" id='enableBlurRecentMsgsCheckbox'>
+										<span class="label-wa">__MSG_txt_Distorcionar_mensajes_recientes__</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="" id='enableBlurContactNumsCheckbox'>
+										<span class="label-wa">__MSG_txt_Distorcionar_nombres_contactos__</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="" id='enableBlurProfilePicsCheckbox'>
+										<span class="label-wa">__MSG_txt_Distorcionar_fotos_perfil__</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="" id='enableBlurContactMsgsCheckbox'>
+										<span class="label-wa">__MSG_txt_Distorcionar_chats__</span>
+									</label>
+								</div>
+							</li>
+							<!-- <li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id="enableAudioMessagesCheckbox">
+								<span class="label-wa">Play audio messages without informing the sender</span>
+                                </label>
+								</div>
+								</li>
+								<li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id='readRecieptsCheckbox'>
+								<span class="label-wa">Disable read receipts (Blue Ticks)</span>
+                                </label>
+								</div>
+								</li>
+								<li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id='typingStateCheckbox'>
+								<span class="label-wa">Hide typing status</span>
+                                </label>
+								</div>
+								</li>
+								<li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id="enableHideOnlineStatusCheckbox">
+								<span class="label-wa">Hide online status (Invisible Mode)</span>
+                                </label>
+								</div>
+								</li>
+								 -->
+								 <li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id="enableRestoreMessagesCheckbox">
+								<span class="label-wa">Restore deleted messages</span>
+                                </label>
+								</div>
+							</li>
+						</ul>
+						<h5 class="settings-header last">__MSG_txt_Adicionales__</h5>
+						<ul>
+							<!-- <li>
+								<div class="checkbox">
+								<label>
+								<input type="checkbox" value="" id='enableLikeButtonCheckbox'>
+								<span class="label-wa">Enable like button</span>
+								</label>
+								</div>
+								</li>
+								<li>
+								<div class="checkbox">
+								<label>
+								<input type="checkbox" value="" id='enableReactionsCheckbox'>
+								<span class="label-wa">Enable message reactions</span>
+								</label>
+								</div>
+							</li> -->
+							<li>
+								<div class="checkbox" id='pinUnreadChatsToTop'>
+									<label>
+										<input type="checkbox" value="" id='pinUnreadChatsToTopCheckbox'>
+										<span class="label-wa">__MSG_txt_Poner_mensajes_sin_leer_inicio__</span>
+									</label>
+								</div>
+							</li>
+							<!-- <li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id='highlightOnlineContactsCheckbox'>
+								<span class="label-wa">Highlight online contacts</span>
+                                </label>
+								</div>
+								</li>
+								<li>
+								<div class="checkbox">
+                                <label>
+								<input type="checkbox" value="" id='notifyOnlineContactsCheckbox'>
+								<span class="label-wa">Notify about online contacts</span>
+                                </label>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="showWhatsapp">
+					<div class="form-group text-center" style="margin-bottom: 25px;margin-top: 15px;">
+						<div id="faviconDiv"><img id="faviconImg" src="img/icon128.png" style="max-width: 32px;"></div>
+						<div id="domainNameDiv" style="font-size: 21px; font-weight: bold;"><span id="domainName">Wasubot -
+						Web</span></div>
+						
+					</div>
+					
+					<div class="col-xs-12 text-center">
+						<!-- <label>To start</label> -->
+						<div id="signupPhoneNumberDiv">
+							<button class="btn btn-wa get-started" id="showWhatsappBtn">Open WhatsApp Web to get
+							started</button>
+						</div>
+						
+					</div>
+				</div>
+				<div class="tab-pane fade" id="phonebook">
+					<div class="container-fluid">
+						<h3 id="lgn_exportar_grupos_text">__MSG_txt_Exportar_Grupos__</h3><hr>
+						<div class="row">
+							<div class="col-xs-12 p-relative">
+								<div class="row text-center premium d-flex j-flex-center" id="contactsprowarning">
+									<span class="premium-icon"></span>
+									<a id="contactsNotificationsBuyLink" href="" class="anchor-wa">Contacts Download is a
+										pro feature. <b>&nbsp;BUY <i>PRO</i> NOW!!</b>
+									</a>
+								</div>
+								<!-- <span class="license-wrapper d-flex d-flex-column">
+									<span class="l-label tuc">Your License<span class="free">: <i class="l-type">PRO</i></span> </span>
+									<span class="wa-tag green">
+									<i class="icon-phonebook mr3"></i>
+									<span>Get contacts plan</span>
+									</span>
+								</span> -->
+								<ul class="wa-checklist">
+									<li>
+										<div class="checkbox" id='allContacts'>
+											<label>
+												<input type="checkbox" value="" checked id='allContactsCheckbox'>
+											<span class="label-wa"><i class="icon-phonebook"></i> __MSG_txt_Todos_los_contactos__</a></span>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox" id='allChatContacts'>
+										<label>
+											<input type="checkbox" value="" checked id='allChatContactsCheckbox'>
+										<span class="label-wa"><i class="icon-message"></i> __MSG_txt_Todos_los_Chats_de_contactos__</a></span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkbox" id='groupContacts'>
+									<label>
+										<input type="checkbox" value="" checked id='groupContactsCheckbox'>
+										<span class="label-wa">
+											<i class="icon-users"></i>
+											<span id="allGroupsCount" class="fsi all-count"></span>
+											<span class="text">__MSG_txt_Grupos__</span>
+										</span>
+									</label>
+									<a id="selectAllGroups" class="icon-anchor cp anchor-wa select-all-anchor">Select All</a>
+									<a id="removeAllGroups" class="icon-anchor cp anchor-wa">
+										<span class="mr3">[<span id="selectedGroupsCount"></span>]</span>
+										<i class="icon-bin lh1"></i>
+									</a>
+								</div>
+								<div id='groupsList'></div>
+							</li>
+							<li>
+								<div class="checkbox" id='labels'>
+									<label>
+										<input type="checkbox" value="" id='labelsCheckbox'>
+										<span class="label-wa">
+											<i class="icon-tag"></i>
+											<span id="allLabelsCount" class="fsi all-count"></span>
+											<span class="text">__MSG_txt_Etiquetas__</span>
+										</span>
+									</label>
+									<a id="selectAllLabels" class="icon-anchor cp anchor-wa select-all-anchor">Select All</a>
+									<a id="removeAllLabels" class="icon-anchor cp anchor-wa">
+										<span class="mr3">[<span id="selectedLabelsCount"></span>]</span>
+										<i class="icon-bin lh1"></i>
+									</a>
+								</div>
+								<div id='labelsList'>
+									
+								</div>
+							</li>
+							<!--li>
+								<div class="checkbox" id='broadcastLists'>
+								<label>
+								<input type="checkbox" value="" id='broadcastListsCheckbox'>
+								<span class="label-wa">
+								<i class="icon-megaphone"></i>
+								<span id="allBroadcastsCount" class="fsi all-count"></span>
+								<span class="text">__MSG_txt_Listas_de_difusiones__</span>
+								</span>
+								</label>
+								<a id="selectAllBroadcasts" class="icon-anchor cp anchor-wa select-all-anchor">Select All</a>
+								<a id="removeAllBroadcasts" class="icon-anchor cp anchor-wa">
+								<span class="mr3">[<span id="selectedBroadcastsCount"></span>]</span>
+								<i class="icon-bin lh1 "></i>
+								</a>
+								</div>
+								<div id='broadcastsList'>
+								
+								</div>
+							</li-->
+						</ul>
+						<button class="btn btn-default" id='downloadAllContacts'><i class="icon-download"></i>__MSG_txt_Exportar_a_Excel__</button>
+						<a id="contactsSendBroadcastDisabledBtn" class="anchor-wa premium"
+						href="https://wasubo.com/?utm_source=chrome_extension&utm_medium=referral&utm_campaign=activate-pro&content=contacts-send-broadcast-btn">
+							<button class="btn btn-wa disabled" id="broadcastAllContactsDisabled">
+								<span class="premium-icon"></span>
+								<i class="icon-send"></i>
+								<span class="text">__MSG_txt_Enviar_mensaje_de_difusion__</span>
+							</button>
+						</a>
+						<button class="btn btn-wa" id="broadcastAllContactsEnabled">
+							<i class="icon-send"></i>
+							<span class="text">Send Msg / Enviar mensaje</span>
+						</button><br>
+						<div class="row text-center premium" id="contactsDownloadLimitLinkWrapper">
+							<div class="col-xs-12 mt10">
+								<a id="contactsownloadLimitLink"
+								href="https://wasubo.com/?utm_source=chrome_extension&utm_medium=referral&utm_campaign=activate-pro&content=only-sample-contacts-downloaded"
+								class="anchor-wa d-flex"><span class="premium-icon"></span>Only Sample Contacts
+									
+									Downloaded,
+									for full access <b>&nbsp;BUY <i>PRO</i> NOW!!</b>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="tab-pane fade" id="reports">
+			<div class="container-fluid text-left">
+				
+				
+				<table class="table table-bordered ttable downloadable" id="reportsTable">
+				</table>
+				<div class="row text-center premium d-flex j-flex-center d-none" id="downloadReportsProWarning">
+					<span class="premium-icon"></span>
+					<a class="anchor-wa">Download sent/failed reports is a
+						pro feature. <b>&nbsp;BUY <i> PRO</i> NOW!!</b>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade in" id="chatbotSettings">
+			<div class="container-fluid text-left">
+				<h3>__MSG_txt_ChatBot_y_Auto_Responder__</h3><hr>
+				<div class="checkbox premium" id='labels'>
+					<span class="premium-icon" id="activateChatbotPremiumIcon"></span>
+					<label class="p0">
+						<input type="checkbox" value="" id='activateChatbot' disabled>
+					<span class="label-wa">__MSG_txt_Activar_BOT__</a></span>
+				</label>
+				<a id="chatbotBuyLink" href="" class="anchor-wa">Chatbot is vip.
+				<b><i>Get vip Now!!</i></b></a>
+			</div>
+			<div class="options">
+				<!--div class="d-flex option">
+					<span class="opt-title">__MSG_txt_Coincidir_con__:</span>
+					<div class="radio mt0 mb0 mr10">
+						<label><input type="radio" name="contentradio" value="Includes" id="includeMatch">__MSG_txt_Incluido_en_frase__</label>
+					</div>
+					<div class="radio mt0 mb0 mr10">
+						<label><input type="radio" name="contentradio" value="exact match" id="exactMatch">__MSG_txt_Frase_exacta__</label>
+					</div>
+				</div-->
+				<!--div class="d-flex option">
+					<span class="opt-title">__MSG_txt_Coincidir_texto_que__:</span>
+					<!--div class="radio mt0 mb0 mr10">
+						<label>
+						<input type="radio" name="caseradio" value="Ignore Case" id="ignoreCase">Ignore Case
+						</label>
+					</div->
+					<div class="radio mt0 mb0 mr10">
+						<label>
+							<input type="radio" name="caseradio" value="Match Case" id="matchCase">__MSG_txt_Coincidencia_exacta__
+						</label>
+					</div>
+					<div class="radio mt0 mb0 mr10">
+						<label>
+							<input type="radio" name="caseradio" value="Soundex" id="soundexCase">__MSG_txt_Palabra_similar__
+						</label>
+					</div>
+				</div-->
+				<!--div class="option">
+					<div class="checkbox" id='defaultEnabledCheckboxWrapper'>
+						<label class="p0">
+							<input type="checkbox" value="" id='defaultEnabled'>
+						<span class="label-wa" id="lgn_mensaje_defecto_text">__MSG_txt_Mensaje_por_defecto__</a></span>
+					</label>
+				</div>
+				<textarea rows="5" class="form-control" id="defaultMessage"></textarea>
+				</div-->
+			<div class="table_chat_bot_new d-none">
+				<span class="opt-title pull-left" id="lgn_agregar_palabra_res_text">__MSG_txt_Agregar_Palabra_Respuesta__:</span><br>
+				<hr>
+				<table style="width:100%">
+					<tr>
+						<td id="lgn_palabra_text">__MSG_txt_Palabra__:</td>
+						<td id="lgn_coincidencia_text">__MSG_txt_Coincidencia__:</td>
+					</tr>
+					<tr>
+						<td> <input class="input_chatbot palabra_bot form-control no-outline" style="width:60%;" type="text" id="add_pre_bot"></td>
+						<td><select id="add_tipe_bot" class="select_form_field form-control no-outline">
+							<option value="coincidencia_exacta">= __MSG_txt_Coincidencia_exacta__</option>
+							<option value="dentro_oracion">~ __MSG_txt_Dentro_de_oracion__</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td id="lgn_respuesta_text">__MSG_txt_Respuesta__:</td>
+					</tr>
+					<tr>
+						<td><textarea style="width: 370px;height: 90px;" class="textarea_chatbot form-control no-outline" type="text" id="add_res_bot"></textarea></td>
+						<td>
+							<button class="add_form_field label btn-wa" style="font-size:16px" id="lgn_agregar_ahora_text">__MSG_txt_Agregar_ahora__ </button>
+							<button class="cancel_form_fieldb label label-danger" style="font-size:16px" id="lgn_cancelar_text">__MSG_txt_Cancelar__ </button>
+						</td>
+					</tr>
+					
+				</table>
+				
+				
+			</div>
+			<div class="option">
+				<ul class="templates-dropdown collapse in chatbot-responses" id="chatbotResponseList" aria-expanded="true">
+					<li class="upload-download-templates-li d-flex j-flex-space-between" id="uploadDownloadChatbotOpts">
+						<!-- <span class="pull-left text-danger fwb ml10" id="uploadTemplateErrorMsg"
+							style="display:none">
+							</span>
+							<span class="pull-left text-success fwb ml10" id="uploadTemplateSuccessMsg"
+							style="display:none">
+						</span> -->
+						<span class="opt-title pull-left">__MSG_txt_Mapa_de_respuestas__:</span>
+						<span class="rhs-wrapper">
+							<a href="#" id="btn_add_pre_res" class="label btn-wa mr10">
+								<i class="icon icon-plus" style="font-size: 16px;"></i> <span id="lgn_agregar_text">__MSG_txt_Agregar__</span>
+							</a>
+							<a href="#" class="label btn-wa mr10" id="uploadResponseButton">
+							<i class="icon icon-upload diff" style="font-size: 16px; margin-right: 2px;"></i>__MSG_txt_Subir_respuestas__</a>
+							<a href="#" class="anchor-wa-blue" id="downloadResponseButton"><i class="icon icon-download diff" style="font-size: 16px; margin-right: 2px;"></i>__MSG_txt_Descargar_respuestas__</a>
+							
+						</span>
+						<input style="display: none;" id="inputUploadResponse" type="file" accept=".csv,.xls,.xlsx,.ods">
+					</li>
+					<li id="responseHTML">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tab-pane fade in" id="help">
+	<div class="container-fluid text-left">
+		<div class="alert alert-success text-center d-none" id="alertQueryReceived">
+			<strong>Success!</strong> Your query has been received!<br>You will receive a call back soon.
+		</div>
+		<div id="helpFormWrapper">
+			<div class="top-section d-flex j-flex-space-between">
+				<div class="lhs">
+					<h4>Topic</h4>
+					<div class="radio">
+						<label><input type="radio" name="optradio" value="Tech support">Tech support</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio" checked value="Account/Billing">Account/Billing</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio" value="Report a Bug">Report a Bug</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio" value="Request Refund">Request Refund</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio" value="Request a New Feature">Request a New
+						Feature</label>
+					</div>
+					<label>Please describe your issue.</label>
+				</div>
+				<div class="rhs d-flex a-flex-end d-flex-column d-flex-sb">
+					<a class="anchor-wa fwb mb10 bottom" id="appLink">
+						<span class="text d-flex j-flex-center">Now Available on Mobile!</span>
+						<img src="https://icon-library.com/images/download-our-app-icon/download-our-app-icon-28.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="p-relative" id="helpMsgWrapper">
+				<textarea rows="5" class="form-control no-outline" id="helpTextArea"></textarea>
+				<button class="wa-main-btn btn-wa" id="helpButton">
+					<i class="wa icon-paperplane-filled lh1"></i>
+				</button>
+			</div>
+		</div>
+		<div id="helpPromoMsg">
+			
+		</div>
+		
+	</div>
+</div>
+<div class="container-fluid" id="GetProCtaContainer">
+	<div class="alert alert-warning p5 d-none" id="cont_mensaje_lineal">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<center><strong><div style="" id="mensaje_lineal"></div></strong></center>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertMsgCustomization">
+		<a href="#" class="close alert-close" title="close">×</a>
+		__MSG_txt_mensaje_con_variaciones_no_pro__<br>
+		<strong>__MSG_txt_mensaje_con_variaciones_no_pro2__ <a href="#" id="activateProMsgCustomization">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertAddAttachment">
+		<a href="#" id="attachmentAlertClose" class="close alert-close" title="close">×</a>
+		__MSG_txt_Intentas_adjuntar_archivos__?<br>
+		<strong>__MSG_txt_El_envio_adjuntos__ __MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProAddAttachment">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertWhatsAppFilter">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Filtrar_whatsapp__ __MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProWhatsappFilter">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertDownloadReports">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Descargar_reporte__ __MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProDownloadReports">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertStopNDownloadReports">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Descargar_reporte__ __MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProStopNDownloadReports">__MSG_txt_hazte_pro__</a>
+		<a href="#" id="skipDownloadReportNFinish" class="text-success d-none">__MSG_txt_FINALIZAR__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertTimeGap">
+		<a href="#" id="timeGapAlertClose" class="close alert-close" title="close">×</a>
+		__MSG_txt_Poner_tiempo_reduce_baneo__.<br>
+		<strong>__MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProTimeGap">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertBatching">
+		<a href="#" id="batchingAlertClose" class="close alert-close" title="close">×</a>
+		__MSG_txt_El_procesamiento_por_lotes_establece_automaticamente_mensaje__.<br>
+		<strong>__MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProBatching">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureAlertPause">
+		<a href="#" class="close alert-close" title="close">×</a>
+		__MSG_txt_Pausar_envio_mensajes__.<br>
+		<strong>__MSG_txt_solo_esta_disponible_version_PRO__. <a href="#" id="activateProPause">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFeatureTemplate">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Las_plantillas_estan_PRO__. <a href="#" id="activateProTemplate">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	
+	<div class="alert alert-danger p5 d-none" id="proFeatureRowFilter">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Seleccionar_filas_pro__. <a href="#" id="activateProRowFilterx">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFreeMessage">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Usaste_todos_los_mensajes_gratis__.<a href="#" id="activateProRowFilter">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="proFreeMoreMessage">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>__MSG_txt_Estas_tratando_enviar_mas_mensajes_permitidos__.<a href="#" id="activateProRowFilterxx">__MSG_txt_hazte_pro__</a></strong>
+	</div>
+	<div class="alert alert-danger p5 d-none" id="excessFileSizeAlert">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong id="warningTextOfFileSize"></strong>
+	</div>
+	<div class="alert alert-warning p5 d-none" id="licenseExpiredAlert">
+		<a href="#" class="close alert-close" title="close">×</a>
+		<strong>
+		__MSG_txt_Su_version_PRO_ha_expirado__ <a href="#" id="activateProRenew">__MSG_txt_hazte_pro__</a></strong>
+		__MSG_txt_o__ <strong>
+			<a href="#" class="text-danger" id="doNotShowRenew">__MSG_txt_No_recordar_de_nuevo__.</a>
+		</strong>
+	</div>
+</div>
+<div id="sendMessages" class="tab-pane fade">
+	<input type="hidden" value="" id="phoneNumber" />
+	<div id="sendMsgs">
+		<div class="alert alert-warning p5 d-none" id="cont_mensaje_lineal">
+			<a href="#" class="close alert-close" title="close">×</a>
+			<center><strong><div style="" id="mensaje_lineal"></div></strong></center>
+		</div>
+		<div class="wrapper wa-popover" id="phoneNumbersLoader">
+			<div class="centered-flexbox h100p">
+				<span class="icon-spinner fa-spin fs50"></span>
+			</div>
+		</div>
+		<div class="wrapper wa-popover" id="profilePicWarning">
+			<div class="centered-flexbox h100p">
+			<a href="#" id="warnAddProfilePicture" class="wa-anchor-white">Validando WhatsApp y verificando foto de perfil, Reabre el plugin ó </a> <span><a target="_blank" href="https://web.whatsapp.com"> Web Whatsapp.</a></span></a>
+		</div>
+	</div> 
+	<div class="container-fluid text-center" id="mainMessageSendContainor">
+		<label class="create-group-heading d-none">
+			<span class="text mr10">Enter details to create a new group with one click</span>
+			<a href="" class="anchor-wa-red tul cancelAddNewGroup fwb">cancel</a>
+		</label>
+		<div class="input-group d-none has-error" id="createGroupName">
+			<span class="input-group-addon">Group Name</span>
+			<input id="groupName" type="text" class="form-control" name="name" placeholder="ex - Support Group">
+			<span class="icon-close-1 form-control-feedback"></span>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-left">
+				<label class="text-danger" id="groupNamerequired">Group name is required to create a group</label>
+			</div>
+		</div>
+		<span id="numberEntryWrapper" class="d-none">
+			<div class="add-numbers-wrapper">
+				<div class="inner">
+					<div class="d-flex j-flex-start number-title excel-sheet" id="excelSheetInputSection">
+						<div class="file">
+							<span class="title pull-left">Excel File</span><br>
+							<span class="value d-flex cp d-flex-aic" id="editFile">
+								<i class="icon icon-file-excel-o"></i>&nbsp;
+								<a href="#" class="value-text" id="fileNameLabel">Filename.xlxs</a>
+								<i class="icon icon-edit"></i>
+							</span>
+						</div>
+						<i class="icon-angle-right"></i>
+						<div class="working-sheet" id='sheetSelectionSection'>
+							<span class="title pull-left">Working Sheet</span><br>
+							<span class="value dropdown">
+								<span class="sheets-dropdown dropdown-toggle cp d-flex d-flex-aic" data-toggle="dropdown">
+									<span class="value-text" id="sheetNameLable">
+										<!-- dynamic -->
+									</span>
+									<span class="icon icon-angle-down"></span>
+								</span>
+								<ul class="dropdown-menu" id="sheetDropdown">
+									<!-- dynamic -->
+								</ul>
+								<span class="scrim"></span>
+							</span>
+						</div>
+						<i class="icon-angle-right"></i>
+						<div class="number-column" id="numbersColumnSelectionSection">
+							<span class="title pull-left">Numbers Column:</span><br>
+							<span class="value-wrapper d-flex">
+								<span class="value dropdown">
+									<span class="no-columns-dropdown dropdown-toggle cp d-flex d-flex-aic" data-toggle="dropdown">
+										<span class="value-text" id="columnNameLabel">
+											<!-- dynamic -->
+										</span>
+										<span class="icon icon-angle-down"></span>
+									</span>
+									<ul class="dropdown-menu" id="columnDropdown">
+										<!-- dynamic -->
+									</ul>
+									<span class="scrim"></span>
+								</span>
+								<b class="numbers-count" id="updateNumberCountWithFileLabel">41</b>
+							</span>
+						</div>
+						<i class="icon-angle-right"></i>
+						<div class="from-to">
+							<span class="title pull-left">__MSG_txt_enviar_a_filas__:</span><br>
+							<span class="value-wrapper">
+								<label for="from">__MSG_txt_desde__: </label>
+								<input type="number" id="fromNumber" min="1">
+								<br>
+								<label for="to">__MSG_txt_hasta__: &nbsp;&nbsp;&nbsp;</label>
+								<input type="number" id="toNumber" min="1">
+							</span>
+						</div>
+						<i class="icon-bin cp fs18 ml5 anchor-wa icon-anchor" id="resetNumberBtnXls"></i>
+					</div>
+					<div class="d-flex j-flex-space-between number-title copy-paste" id="copyPasteInputSection">
+						<div class="copy-paste-numbers d-flex j-flex-start a-flex-center">
+							<span class="title pull-left">Numbers: </span>
+							<span id="copyPasteNosCountSection" class="d-flex j-flex-start a-flex-center">
+								<span class="ml3">
+									(&nbsp;<b class="text-wa-dark" id="updateNumberCountLabel"></b>&nbsp;)
+								</span>
+								<i class="icon-bin cp fs18 ml5 anchor-wa icon-anchor lh1" id="resetNumberBtn"></i>
+							</span>
+						</div>
+						<span class="upload-file">
+							<span class="title pull-left">__MSG_txt_importar_numeros__: </span>
+							<button class="btn btn-default" id="btnUploadNumbersButton">
+								<span class="icon icon-file-excel-o fs16 vam"></span> __MSG_txt_subir_excel__
+								<input style="display: none;" id="inputUploadNumbers" type="file" accept=".csv,.xls,.xlsx,.ods">
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-group input-group mb0 text-left wa-nos-input-group d-flex">
+				<span class="input-group-addon p0 min-width-max-content isdCode-wrapper centered-flexbox">
+				<input id="isdCode" class="w0 h32 pr0"></span>
+				<span class="wrapper d-flex-grow p-relative">
+					<input class="form-control" id="tokenfield" id="inputNumbersBulk" placeholder="__MSG_txt_agregar_numero__">
+					<span class="label label-danger cp tt-grey" id="phoneNumbersErrorDownload" data-html="true" data-placement="left" data-toggle="bs-tooltip" title="__MSG_txt_descargar__">
+						<i id="phoneNumbersErrorCounter"></i>&nbsp;
+						<i class="icon icon-download"></i>
+					</span>
+				</span>
+			</div>
+			<div class="row mt5">
+				<div class="col-xs-12" id="createGroupBtnWrapper">
+					<span id="createNewGroupFreeWrapper">
+						<button class="wa-main-btn d-flex j-flex-center a-flex-center" id="createNewGroupBtnFree">
+							<span class="icon-users"></span>
+							<span class="text ml5">Create Group<i class="ml5">with 2 users</i></span>
+						</button>
+						<a id="contactsNotificationsBuyLink" href="" class="anchor-wa">
+							<span class="premium-icon"></span>
+							To create group with more than 2 users <b>&nbsp;Buy <i>PRO</i> NOW!!</b>
+						</a>
+					</span>
+					
+					<span id="createNewGroupProWrapper">
+						<button class="wa-main-btn d-flex j-flex-center a-flex-center" id="createNewGroupBtnPro">
+							<span class="icon-users"></span>
+							<span class="text ml5">Create Group</span>
+						</button>
+					</span>
+					
+					<a href="" class="anchor-wa-red tul cancelAddNewGroup fwb">cancel</a>
+					
+					<div class="alert alert-warning mt5 mb0 p5 d-none" id="createGroupError">
+						<strong class="mr3">Failed!</strong><i>Some phone numbers are not present on WhatsApp</i><br>
+						<a class="fwb d-inline-flex a-flex-center cp" id="createGroupRunWhatsappFilter"><span class="icon-filter mr3"></span><span>Run WhatsApp filter</span></a> & upload
+						the filtered list.
+					</div>
+					<div class="alert alert-success mt5 mb0 p5" id="createGroupSuccess">
+						<strong class="mr3">Success! </strong><i><span id="createGroupSuccessName"></span> Created successfully with <span id="createGroupSuccessCount"></span>
+						members</i><br>
+						<span id="createGroupSuccessSkippedCount"></span> members skipped.
+						<a class="fwb d-inline-flex a-flex-center cp ml5" id="downloadGroupStatus">
+							<span class="icon-download-1 mr3"></span>
+							<span>Download details!</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 p0 text-right" id="whatsappFilterBtnWrapper">
+				<div class="row premium cp" id="filterProWarning" style="display: none;">
+					<div class="col-xs-12 text-left mb5 d-flex">
+						<span class="premium-icon"></span>
+						<a class="anchor-wa">WhatsApp
+							Number Filter is a
+							pro feature. <b>&nbsp;BUY <i>PRO</i> NOW!!</b>
+						</a>
+					</div>
+				</div>
+				<a href="#" class="mr10 tt-grey anchor-wa-grey icon-anchor" id="whatsappFilterBtn" style="display: none;" data-toggle="tooltip" data-html="true"
+				title="Run WhatsApp Filter" data-placement="left">
+					<span class="icon icon-filter vam"></span>
+				</a>
+			</div>
+		</span>
+		<span id="groupSelectionListWrapper">
+			<span class="title pull-left">Selected groups/broadcasts: </span>
+			<span id="copyPasteNosCountSection" class="d-flex j-flex-start a-flex-center">
+				<span class="ml3">
+					(&nbsp;<b class="text-wa-dark" id="updateNonNumberCountLabel"></b>&nbsp;)
+				</span>
+				<i class="icon-bin cp fs18 ml5 anchor-wa icon-anchor lh1" id="resetNonNumberBtn"></i>
+			</span>
+			<span id="groupSelectionList"></span>
+		</span>
+		<div class="msgSendingWrap">
+			<table>
+				<tr>
+					<td id="lgn_prueba_mensaje_text">__MSG_lgn_prueba_mensaje_text__</td>
+					<td>
+					<input type="number" class="input_test_msg_num form-control no-outline" placeholder="__MSG_txt_numero_para_pruebas__"> </td>
+					<td> <div class="actions-right">
+						<div class="wa-send-btn btn-wa" id="sendMessageTest">
+							<i class="wa icon-paperplane-filled fs20 lh1 d-flex"></i>
+						</div>
+					</div> </td>
+				</table>
+				<div class="row mt10">
+					<div class="col-xs-12">
+						<div class="pull-left d-flex" id="msgLabelSection">
+							<span class="d-flex fwb">
+								<i class="icon icon-message fs18 mr3 d-flex d-flex-aic"></i>
+								__MSG_txt_MENSAJE__ <span class="ml5" id="messageInvalid"></span>
+							</span>
+							<a href="#" data-toggle="collapse" data-target="#msgSettingsDropdown" class="anchor-wa icon-anchor">
+								<i class="icon icon-clock ml5 fs18 vam lh1"></i>
+								<span class="tt">__MSG_txt_humaniza_tiempos_de_envios__</span>
+							</a>
+						</div>
+						
+						<a class="mr10 anchor-wa-black fs16 pull-right icon-anchor dropdown-toggle" href="#" id="msgPreviewBtn" data-toggle="dropdown">
+							<span class="icon icon-eye vam tt-grey" data-toggle="tooltip" title="Show message preview" data-placement="left"></span>
+						</a>
+						<a class="mr10 anchor-wa-black fs16 pull-right icon-anchor dropdown-toggle hidden" href="#" id="msgPreviewCloseBtn" data-toggle="dropdown">
+							<span class="icon icon-eye-off vam tt-grey" data-toggle="tooltip" title="Exit message preview" data-placement="left"></span>
+						</a>
+					</div>
+				</div>
+				<div class="collapse" id="msgSettingsDropdown">
+					<p class="d-flex" id="timeGapSettings">
+						<span class="lhs">
+							<span class="text">__MSG_txt_intervalo_tiempo__</span>
+							<b>&nbsp;0&nbsp;</b>
+							<span class="text">to&nbsp;</span>
+							<input type="number" id="msgGap" min="1" max="99">
+							<span class="ml5 mr10">__MSG_txt_Segundos__</span>
+						</span>
+						<span class="switch-wrapper">
+							<label class="switch">
+								<input type="checkbox" id="timeGapBtn">
+								<span class="slider round"></span>
+							</label>
+						</span>
+					</p>
+					<p class="m0 mb10" id="batchingSettings">
+						<span class="lhs">
+							<span class="text mr3">__MSG_txt_Enviar_en__</span>
+							<input type="number" id="batchSize" min="1" max="100">
+							<span class="text ml3 mr5">no/s in each batch.</span>
+							<span class="text mr3">__MSG_txt_tiempo_entre_lotes__:</span>
+							<input type="number" id="batchGap" min="1" max="99">
+							<span class="text ml3">min/s</span>
+						</span>
+						<span class="switch-wrapper rhs">
+							<label class="switch">
+								<input type="checkbox" id="batchSettingsBtn">
+								<span class="slider round"></span>
+							</label>
+						</span>
+					</p>
+					<div class="premium cp d-flex" id="slowdownProWarning">
+						<span class="premium-icon"></span>
+						<a class="anchor-wa">
+							<span class="text">Batching /time gap b/w msgs is a pro feature.</span>
+							<b>&nbsp;BUY <i>PRO</i> NOW!!</b>
+						</a>
+					</div>
+				</div>
+				<div class="row premium cp" id="msgCustomisationProWarning">
+					<div class="col-xs-12 text-left mb5 d-flex">
+						<span class="premium-icon"></span>
+						<a class="anchor-wa">Sending
+							Name/Customized Msgs is a
+							pro feature. <b>&nbsp;BUY <i>PRO</i> NOW!!</b>
+						</a>
+					</div>
+				</div>
+				<div class="form-group mb0 p-relative" id="messageFormGroup">
+					<div class="wa-textarea-bg dropdown msg-preview-dropdown">
+						<div class="dropdown-menu preview-dropdown">
+							<div id="previewDiv">
+								<!-- dynamic -->
+							</div>
+						</div>
+						<span class="scrim"></span>
+						<div>
+							<textarea type="text" class="form-control no-outline" id="inputMessageBulk" placeholder="__MSG_txt_ingresar_mensaje__" rows="8"></textarea>
+						</div>
+						<div class="actions d-flex">
+							<ul class="collapse templates-dropdown" id="templatelist">
+								<!-- dynamic -->
+							</ul>
+							<div class="collapse sinon_etis-dropdown" id="sinon_etis">
+								
+								<span>
+									__MSG_txt_explicacion_sinonimos__
+								</span>
+								
+								<table>
+									<tr>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_1" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_2" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_3" /></td>
+									</tr>
+									<tr>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_4" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_5" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_6" /></td>
+									</tr>
+									<tr>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_7" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_8" /></td>
+										<td><input style="margin:2px;" type="text" placeholder="__MSG_txt_palabra_aleatoria__" class="palabra_aleatoria_9" /></td>
+									</tr>
+								</table>
+								__MSG_txt_Resultado__:
+								<textarea style="width:100%;" class="resultado_palabra_aleatoria"></textarea>
+								<br><hr>
+								
+								<input type="button" class="agg_palabra_aleatoria" value="__MSG_txt_agregar__ __MSG_txt_palabra_aleatoria__" />
+								<input type="button" class="agg_numero_aleatorio" value="__MSG_txt_agregar__ __MSG_txt_numero_aleatorio__" />
+							</div>
+							<span class="scrim"></span>
+							
+							<!-- Currently Empty -->
+							<ul class="collapse templates-dropdown" id="autoReplyLst"></ul>
+							
+							<div class="actions-left dropdown dropup d-flex">
+								<div class="dropdown dropup mr20" id="addAttachmentDropup">
+									<div class="scrim"></div>
+									<span data-html="true" data-placement="top" data-toggle="bs-tooltip" title="__MSG_txt_Adjuntar__" class="d-inline-flex tt-grey">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle icon-anchor p-relative attachment-anchor"
+										id="attachmentDropdownToggleBtn">
+											<span class="attachment-preview-count" id='attachmentsLength'>4</span>
+											<i class="wa icon-paperclip fs20"></i>
+										</a>
+										
+									</span>
+									
+									<span class="anchor-wabs wa-tooltip cp pull-right" data-tip="__MSG_txt_Guardar_como_plantilla__" id="addTemplateBtn">
+										<i class="icon icon-message  fs20"></i>
+									</span>
+									<div class="dropdown-menu p0 m0" id="attachmentDropdown">
+										<div id="selectAttachmentsContainer">
+											<div>
+												<p id="fileTypeImageButton" class="cp">
+													<img src="img/image.svg" alt="">
+													<span class="file-type-label">Photos / Videos</span>
+												</p>
+											</div>
+											<div>
+												<p id="fileTypeDocumentButton" class="cp">
+													<img src="img/document.svg" alt="">
+													<span class="file-type-label">Document/s</span>
+												</p>
+											</div>
+											<div id="attachContactDropupToggleAltBtn">
+												<p id="fileTypeContactButton" class="cp">
+													<img src="img/contact.svg" alt="">
+													<span class="file-type-label">Contact card</span>
+												</p>
+											</div>
+											<input accept="image/*,video/mp4,video/3gpp,video/quicktime" id="inputImages" type="file" multiple="" style="display: none;">
+											<input accept="*" type="file" id="inputDocuments" multiple="" style="display: none;">
+										</div>
+										
+										<div class="wa-attached-files d-none" id="attachmentsContainer">
+											<div class="wa-attached-files" id="attachmentsContainer">
+												<span class="attachment-preview-count">1</span>
+												<div class="previews-wrapper" id="attachmentsPreview">
+												</div>
+												<i class="wa icon-bin-solid mr5" id="deleteAttachmentsBtn"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!--span data-toggle="bs-tooltip" title="Add unsubscribe line" class="d-inline-flex tt-grey">
+									<i class="wa icon-optout fs22 mr20" id="optoutBtn"></i>
+								</span-->
+								<span data-toggle="bs-tooltip" title="__MSG_txt_Plantillas__" class="d-inline-flex tt-grey">
+									<a href="#" data-toggle="collapse" data-target="#templatelist" class="icon-anchor">
+										<i class="wa icon-templates fs24"></i>
+									</a>
+								</span>
+								<span style="left: 20px; position: relative;" data-toggle="bs-tooltip" title="__MSG_txt_Sinonimos_y_etiquetas__" class="d-inline-flex tt-grey">
+									<a href="#" data-toggle="collapse" id="sinon_etis_a" data-target="#sinon_etis" class="icon-anchor  ">
+										<i class="wa icon-tag fs22"></i>  
+									</a>
+								</span>
+								
+								<div class="checkbox-dropdown-wrapper" id="captionCheckboxWrapper">
+									<div class="checkbox mt0 ml5 mr5 d-inline-block text-as-caption">
+										<label class="d-flex-start">
+											<input type="checkbox" value="" id="captionCheckbox">
+											<span class="label-wa text-wa-grey pl20">
+												<span class="text pr3">__MSG_txt_Texto_como_subtitulo_de_adjunto__</span>
+											</span>
+										</label>
+									</div>
+								</div>
+								<span class="scrim" id="previewScrim"></span>
+							</div>
+							<div class="actions-center">
+								<!-- <i class="wa icon-bold fs20"></i>
+									<i class="wa icon-italic fs20"></i>
+								<i class="wa icon-strikethrough fs20"></i> -->
+							</div>
+							<div class="actions-right tt-grey" id="sendMessageBulkWrapper" data-html="true" title="Add phone numbers & msg to send" data-placement="left" data-toggle="tooltip">
+								<div class="wa-main-btn btn-wa" id="sendMessageBulk">
+									<i class="wa icon-paperplane-filled fs20 lh1 d-flex"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row tags-row">
+					<div class="col-xs-12">
+						<div id="msgCustomizationSection" class="text-left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 text-center" id="freesenddetails" style="font-size: 11px;">   </div>    
+			<div class="col-xs-12 text-center">
+				<a class="text-warning" id="proDiagnostic" style="text-decoration: underline; text-decoration-style: dashed;">
+					<span id="boughtProQuestion" class="anchor-wa-blue">__MSG_txt_ya_adquiriste_PRO__?</span>
+					<span id="proAddProfilePicture" style="display:none" class="anchor-wa-blue fwb">__MSG_txt_validando_foto_perfil__!</span>
+					<span id="applyLicensce" style="display:none" class="anchor-wa-blue">Apply
+					Licensce</span>
+					<span id="applyingLicensce" style="display:none">__MSG_txt_Aplicar_licencia__</span>
+					<span id="noLicensceFound" style="display:none">__MSG_txt_Licencia_no_encontrada__</span>
+					<span id="licensceConnectionError" style="display:none">__MSG_txt_Error_de_internet__.</span>
+				</a>
+			</div>
+		</div>
+		<div class="container-fluid" id="editTemplateContainer" style="display: none;">
+			<div class="row">
+				<div class="col-xs-12">
+					<label class="pull-left" id="addTemplateLabel">
+						<i class="icon icon-templates" id="addTemplateLabel"></i>
+						__MSG_txt_Agregar_plantilla__: <span id="createTemplateError" class="text-danger"></span>
+					</label>
+					
+					<label class="pull-left" id="editTemplateLabel">
+						<i class="icon icon-templates" id="editTemplateLabel"></i>
+						__MSG_txt_Editar_plantilla__: <span id="editTemplateError" class="text-danger"></span>
+					</label>
+					
+				</div>
+				<div class="col-xs-12">
+					<div class="input-group mb5">
+						<span class="input-group-addon">Name/ shortcut of template</span>
+						<input type="text" class="form-control" id="templateName" placeholder="">
+					</div>
+				</div>
+			</div>
+			<div class="form-group mb0 p-relative mb5 ">
+				<textarea type="text" class="form-control input-field-name" rows="8" id="templateBody"></textarea>
+				
+				<div class="box"></div>
+			</div>
+			<div class="row text-center mb10">
+				<div class="col-xs-12">
+					<span id="cancelTemplateBtn" class="btn btn-default">
+						<span class="text-danger"><i class="icon icon-close"></i> __MSG_txt_Cancelar__</span>
+					</span>
+					<span id="saveTemplateBtn" class="btn btn-primary">
+						<i class="icon icon-save"></i> __MSG_txt_Guardar__
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sendingMsgs">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="container-fluid" id="progressTableWrapper">
+					<table class="table table-bordered ttable">
+						<tbody id='progressTable'>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" id="sendMsgReportsSection">
+				<div class="col-xs-12 mt10">
+					<div id="progressBarWrapper" class="p-relative">
+						<div class="wrapper p-relative">
+							<div class="alert alert-danger cp" id="alertBuyProAttachment">
+								Attachment/Contact Sending is a premium feature. To continue <b><i>BUY
+								NOW!!</i></b>
+							</div>
+							<span class="notch" style="left: 20%;"></span>
+						</div>
+						<div class="progress msgProgressBase" id="progressBar">
+							<span class="msgProgressBar" id="progressDone" style="width: 20%;opacity:.75;"></span>
+							<div class="progress-bar" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+							</div>
+							<div class="progress-bar" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+							</div>
+							<div class="progress-bar" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+							</div>
+							<div class="progress-bar" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+							</div>
+						</div>
+						<div class="mt5 mb5 d-flex">
+							<span>0</span>
+							<div id="sendingMsgSection" class="d-flex-grow">
+								<span id="sendMsgBtnsSection" class="d-flex j-flex-center">
+									<a class="text-warning fs24 icon-anchor cp" id="pauseMessaging">
+										<span class="icon icon-pause"></span>
+									</a>
+									<a class="anchor-wa fs24 icon-anchor cp" id="resumeMessaging">
+										<span class="icon icon-play"></span>
+									</a>
+									<a class="anchor-wa-red fs24 ml5 icon-anchor cp" id="stopMessaging">
+										<span class="icon icon-stop"></span>
+									</a>
+								</span>
+							</div>
+							<a href="#" class="anchor-wa mr10 fwb cp" id="sendingPgDownloadBtn">
+								<i class="icon-download-1 fs16 vam"></i> __MSG_txt_Descargar_reporte__
+							</a>
+							<span id='progressTotalMessages'>760</span>
+						</div>
+					</div>
+					<div class="row" id="abortConfirmRow">
+						<div class="col-xs-12">
+							<div id="abortConfiormation">
+								<span class="textLabel">Are you sure?</span>
+								<strong id="confirmStopMessaging" class="cp tul text-danger">
+								__MSG_txt_Si__</strong><span> / </span>
+								<strong id="cancelStopMessaging" class="text-wa cp tul">
+								__MSG_txt_No__</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="proAdvertisement" class="tab-pane fade">
+	<div class="container-fluid text-left">
+		<h4 class="text-center"><b><u><i>Pro Features</i></u></b><br></h4>
+		<ol>
+			<li>
+				<strong>Name customisation in message</strong>
+				
+			</li>
+			<li>
+				<strong>Send image, video,audio, file attachments</strong>
+			</li>
+			<li>
+				<strong>Filter WhatsApp numbers from Excel Sheet</strong>
+			</li>
+			<li>
+				<strong>Save your messages as templates</strong>
+			</li>
+			<li>
+				<strong>Extract contacts/numbers from groups and more...</strong>
+			</li>
+		</ol>
+		<div class="text-center" style="margin-top: 25px;">
+			<b><u><i>Disclaimer</i></u></b><br>
+			<i>
+				Pro does not avoid number blocking<br>
+				Impossible to avoid number blocking<br>
+				Anyone saying otherwise is lying With intention to cheat you<br>
+			</i>
+		</div>
+		<div class="text-center mt20">
+		<a href="#" id="buyProVerion" class="btn btn-wa btn-lg mb20">Buy Pro Version</a></li>
+	</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<p class="info-section d-flex d-flex-sb">
+				<span class="d-flex-start d-flex-grow">
+					<span id="userDetails">
+						<span class="text">Name</span>
+						<span class="sep ml3 mr3">-</span>
+						<b>Whatsapp No</b>
+						<a class="anchor-wa"></a>
+					</span>
+					<span class="text ml3 mr3">|</span>
+					<a class="anchor-wa fwb d-flex-start d-inline-flex" id="demo-link">
+						<i class="wa icon icon-play flex mr3"></i>
+						<span class="text flex">__MSG_lgn_turorial_text__</span>
+					</a> | 
+					<a href="#help" class="anchor-wa fwb d-flex-start d-inline-flex getHelp">
+						
+						<span class="text " id="lgn_chat_ayuda_text">__MSG_lgn_chat_ayuda_text__ <i class="wa icon-question-o mr3 "></i></span>
+					</a>
+				</span>
+				<span class="text-right d-flex-start">
+					<span id="mobiledisplaydata"></span> | <b id="wapluginVersion">__version__</b>
+					<!-- <span class="text ml3 mr3">|</span>
+						<a href="#help" class="anchor-wa fwb d-flex-start d-inline-flex getHelp">
+						<i class="wa icon-question-o mr3 flex"></i>
+						<span class="text flex">HELP</span>
+					</a> -->
+				</span>
+			</p>
+			<div class="alert alert-danger p5 text-center" id="whatsappDisconnectedWarning">
+				<strong>Error!</strong>
+				<span>WhatsApp web disconnected!</span>
+				<a class="text-danger fwb cp" id="reloadWhatsapp">__MSG_txt_Abrir_WhatsApp_Web_para_iniciar__</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>															

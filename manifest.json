@@ -1,0 +1,57 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    
+    "name": "__MSG_txt_chrome_extension_name__",
+    "description": "__MSG_txt_chrome_extension_description__",
+    "version": "2.0.2",
+    "short_name":"Wasubo",
+    "author":"wasubo.com",
+    "default_locale": "en",
+    "manifest_version":2,
+    "homepage_url":"https://wasubo.com",
+    "background": {
+        
+        
+        "scripts": [
+            "background.min.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/"
+            ],
+            "js": [
+                "content.min.js"
+            ],
+            "css": [
+                "css/content.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "__MSG_txt_browser_action_title__"
+    },
+    "permissions": [
+        "notifications",
+        "storage",
+		"tabs",
+		 "identity",
+        "identity.email",
+        "https://wasubo.com/*"
+    ],
+    "icons": {
+        "16":"img/main-icon16.png",
+        "22":"img/main-icon32.png",
+        "32":"img/main-icon32.png",
+        "48":"img/main-icon48.png",
+        "128":"img/main-icon128.png"
+    },
+    "web_accessible_resources": [
+        "css/lib.css",
+        "/img/*",
+        "fl.js"
+    ]
+}

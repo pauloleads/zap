@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+  .cd-tabs__list span{font-size:16px;}
+#phonebook {
+    min-height: 50px;
+}
+.iti__flag-container {
+    
+    padding: 0px; 
+}
+.tokenfield .token-input {
+    
+    width: 100% !important;
+}
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #4691f6;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+#emojiPickerWrap {margin:10px 0 0 0;}
+.emojiPickerIconWrap .black {
+     background-size: 40% !important;
+     background-color: transparent !important;
+}
+.emojiPicker {
+
+        top: 40%!important;
+}
+#inputMessageBulk{ width: 698px !important;}
